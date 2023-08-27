@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>YouTube Video Downloader</h1>
+    </header>
+    <main>
+        <form id="download-form">
+            <label for="video-url">Enter YouTube Video URL:</label>
+            <input type="text" id="video-url" name="video-url" placeholder="https://www.youtube.com/watch?v=...">
+            <button type="button" id="download-button">Download</button>
+        </form>
+        <div id="download-options" style="display: none;">
+            <p>Select Download Format:</p>
+            <select id="format-select">
+                <option value="mp4">MP4</option>
+                <option value="webm">WebM</option>
+            </select>
+            <button type="button" id="start-download-button">Start Download</button>
+        </div>
+        <div id="download-link" style="display: none;">
+            <p>Your Download Link:</p>
+            <a id="download-link-anchor" href="" download>Click here to download</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
